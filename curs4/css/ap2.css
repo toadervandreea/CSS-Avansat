@@ -1,0 +1,35 @@
+body{
+    margin: 40px auto;
+    width: 100%;
+    max-width: 100px;
+}
+.box{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    order: 1;
+}
+.box:nth-child(2n+1){
+    background-color: blue;
+    color: black;
+}
+.box:nth-child(9n){
+    visibility: hidden;
+}
+#wrapper{
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px 100px; */
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(8, 50px);
+    grid-gap: 0px;
+}
+.box1{
+    order:3;
+}
+.box2{
+    order: 2;
+}

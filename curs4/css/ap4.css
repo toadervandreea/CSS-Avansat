@@ -1,0 +1,12 @@
+:root{
+    --mycolor: green;
+}
+body{
+    --mycolor: blue;
+}
+.block{
+    --mycolor: red;
+}
+p{
+    color: var(--mycolor);
+}

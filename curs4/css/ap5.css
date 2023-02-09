@@ -1,0 +1,28 @@
+:root{
+    --primary-color: blue;
+    --secondary-color: rgb(117, 73, 163);
+    --font-color: rgb(52, 120, 85);
+    --bg-color: white;
+    --heading-color: black;
+}
+[data-theme= "dark"]{
+    --primary-color: rgb(104, 104, 139);
+    --secondary-color: rgb(32, 10, 55);
+    --font-color: rgb(226, 243, 234);
+    --bg-color: rgb(15, 13, 13);
+    --heading-color: rgb(40, 113, 137);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: calc(1rem+ 0.25vh);
+}
+h1{
+    color: var(--heading-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
